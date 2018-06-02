@@ -25,7 +25,7 @@ $(function () {
       .removeClass("active");
   });
   $('#gogame').click(function(){
-    window.location.href="../page/playgame.html?userId=e04d33c9648011e89774525400b4f4ae&roomId=1&rule=1&playerNum&=1&clip=1&upper=100&special=1&roundNumber=12&mainType=1"
+    window.location.href="../page/playgame.html"
   })
   $('input[type=radio][name=peopleNumber]').change(function () {
     if (this.value == '1') {

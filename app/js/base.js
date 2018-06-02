@@ -14,7 +14,7 @@ if (!isWeiXin()) {
 var loadingHtml = '<div class="loadingBox" id="loadingBox"><div class="loadwarp"><div class="loader">加载中...</div></div></div>'
 
 var config = {
-    URL: 'http://193.112.6.245:8080/',
+    URL: 'http://193.112.6.245:8082/',
     addloading: function () {
         if ($('#loadingBox').length){
             $('#loadingBox').show();
@@ -35,11 +35,10 @@ var api = (function ($, config) {
             type: option && option.type || 'POST',
             data: params,
             success: function (resp) {
-                resp = ( typeof resp === 'string' ? JSON.parse(resp) : resp)
-                if (!resp.isSuccess) {
+                if (resp.status !== '200') {
                     dfd.reject(resp)
                 } else {
-                    dfd.resolve(resp)
+                    dfd.resolve(typeof resp === 'string' ? JSON.parse(resp) : resp)
                 }
             },
             error: function (err) {

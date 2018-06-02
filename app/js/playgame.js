@@ -61,13 +61,13 @@ function msg(m){
     showTime: 1500
   })
 }
-function send(msg) {
+function send(val) {
   switch (ws.readyState) {
     case WebSocket.CONNECTING:
       msg('表示正在连接')
       break;
     case WebSocket.OPEN:
-      ws.send(JSON.stringify(msg));
+      ws.send(JSON.stringify(val));
       break;
     case WebSocket.CLOSING:
       msg('表示连接正在关闭')

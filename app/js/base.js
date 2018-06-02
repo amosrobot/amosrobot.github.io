@@ -15,6 +15,12 @@ var loadingHtml = '<div class="loadingBox" id="loadingBox"><div class="loadwarp"
 
 var config = {
     URL: 'http://193.112.6.245:8082/',
+    byUrl: function (name, url) {
+        if (!url) url = location.href; // 取url
+        var mat = new RegExp('[?&]' + name + '=(.*?)(&|#|$)').exec(url);
+        if (mat) return decodeURIComponent(mat[1]);
+        return '';
+    },
     addloading: function () {
         if ($('#loadingBox').length){
             $('#loadingBox').show();
@@ -35,10 +41,11 @@ var api = (function ($, config) {
             type: option && option.type || 'POST',
             data: params,
             success: function (resp) {
-                if (resp.status !== '200') {
+                resp = ( typeof resp === 'string' ? JSON.parse(resp) : resp)
+                if (!resp.isSuccess) {
                     dfd.reject(resp)
                 } else {
-                    dfd.resolve(typeof resp === 'string' ? JSON.parse(resp) : resp)
+                    dfd.resolve(resp)
                 }
             },
             error: function (err) {

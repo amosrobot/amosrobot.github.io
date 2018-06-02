@@ -1,66 +1,80 @@
-#app{
+#app {
   padding: 0 10px;
-  background: #0bc884;
+  background: url('../image/playGame/bg1.png');
+  background-size: 100% 100%;
   color: #fff;
+  z-index: -1;
 }
+
 #app .mobile-dialogView {
   color: #333;
 }
-html,body{
+
+html,
+body {
   overflow: hidden;
   position: relative;
 }
-.cartnum{
+
+.cartnum {
   margin: 10px 0px;
 }
-.cartnum span{
-  background: rgba(0,0,0,.3);
+
+.cartnum span {
+  background: rgba(0, 0, 0, .3);
   padding: 5px 10px;
   border-radius: 10px;
 }
-.tipbtn{
+
+.tipbtn {
   position: absolute;
   right: 10px;
-  top: 20px;
+  top: 10px;
   display: -webkit-box;
-  background: url('../image/playGame/bantouming.png') no-repeat;
-  background-size: 170px 40px;
-  padding: 0 10px;
+  padding-left: 10px;
 }
-.tipbtn .minBtn{
+
+.tipbtn .minBtn {
   -webkit-box-flex: 1;
-  width: 50px;
+  width: 40px;
   height: 40px;
 }
-.tipbtn .minBtn:nth-child(1){
-  background: url('../image/playGame/tishi.png') no-repeat center center;
-  background-size:35px 35px;
+
+.tipbtn .minBtn:nth-child(1) {
+  background: url('../image/playGame/gk.png') no-repeat center center;
+  background-size: 30px 30px;
 }
-.tipbtn .minBtn:nth-child(2){
-  background: url('../image/playGame/tishi.png') no-repeat center center;
-  background-size:35px 35px;
+
+.tipbtn .minBtn:nth-child(2) {
+  background: url('../image/playGame/ts.png') no-repeat center center;
+  background-size: 30px 30px;
 }
-.tipbtn .minBtn:nth-child(3){
-  background: url('../image/playGame/tishi.png') no-repeat center center;
-  background-size:35px 35px;
+
+.tipbtn .minBtn:nth-child(3) {
+  background: url('../image/playGame/zy.png') no-repeat center center;
+  background-size: 30px 30px;
 }
-.seat{
+
+.seat {
   position: absolute;
   left: 0;
-  top:15px;
+  top: 15px;
   bottom: 0;
   right: 0;
   padding: 10px;
   z-index: -1;
 }
-.headPortrait{
+
+.headPortrait {
   margin-bottom: 30px;
   position: absolute;
 }
-.headPortrait.kingBox{
+
+.headPortrait.kingBox {
   position: absolute;
 }
-.headPortrait.kingBox::after{
+
+.headPortrait.kingBox::after {
   content: '';
   position: absolute;
   width: 24px;
@@ -71,144 +85,181 @@ html,body{
   background-size: cover;
   z-index: 10;
 }
-.headPortrait .dft{
+
+.headPortrait .dft {
   width: 30px;
   height: 30px;
   border-radius: 5px;
   border: 1px solid #eee;
   line-height: 28px;
   text-align: center;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, .3);
 }
-.seat .headPortrait:nth-child(1){
-  top:60px;
-  left:10;
+
+.seat .headPortrait:nth-child(1) {
+  top: 60px;
+  left: 10;
 }
-.seat .headPortrait:nth-child(2){
-  top:150px;
-  left:10;
+
+.seat .headPortrait:nth-child(2) {
+  top: 130px;
+  left: 10;
 }
-.seat .headPortrait:nth-child(3){
-  top:240px;
-  left:10;
+
+.seat .headPortrait:nth-child(3) {
+  top: 200px;
+  left: 10;
 }
-.seat .headPortrait:nth-child(4){
-  top:330px;
-  left:10;
+
+.seat .headPortrait:nth-child(4) {
+  top: 270px;
+  left: 10;
 }
-.seat .headPortrait:nth-child(5){
-  top:420px;
-  left:10;
+
+.seat .headPortrait:nth-child(5) {
+  top: 340px;
+  left: 10;
 }
-.seat .headPortrait:nth-child(6){
-  top:auto;
+
+.seat .headPortrait:nth-child(6) {
+  top: auto;
   bottom: 10px;
-  left:10;
+  left: 10;
 }
-.seat .headPortrait:nth-child(7){
-  top:330px;
+
+.seat .headPortrait:nth-child(7) {
+  top: 340px;
   right: 10px;
 }
-.seat .headPortrait:nth-child(8){
-  top:240px;
+
+.seat .headPortrait:nth-child(8) {
+  top: 270px;
   right: 10px;
 }
-.seat .headPortrait:nth-child(9){
-  top:150px;
+
+.seat .headPortrait:nth-child(9) {
+  top: 200px;
   right: 10px;
 }
-.seat .headPortrait:nth-child(10){
-  top:60px;
+
+.seat .headPortrait:nth-child(10) {
+  top: 130px;
   right: 10px;
 }
-.seat .headPortrait:nth-child(11){
-  top:60px;
-  right:100px
+
+.seat .headPortrait:nth-child(11) {
+  top: 60px;
+  right: 10px;
 }
-.seat .headPortrait:nth-child(12){
-  top:60px;
-  left: 100px;
+
+.seat .headPortrait:nth-child(12) {
+  top: -5px;
+  left: 50%;
+  margin-left: -30px
 }
-.people{
+
+.people {
   padding: 5px;
-  background: rgba(0,0,0,.3);
-  width: 50px;
+  background: rgba(0, 0, 0, .3);
+  width: 40px;
+  height: 60px;
   border-radius: 5px;
 }
-.people img{
-  width: 40px;
-  height: 40px;
+
+.people img {
+  width: 24px;
+  height: 24px;
 }
-.people .userName{
+
+.people .userName {
   line-height: 16px;
+  font-size: 12px;
 }
-.people .num{
+
+.people .num {
   line-height: 12px;
   text-align: center;
 }
-.userPic{
-  width: 40px;
-  height: 40px;
-}
-.breakLine{
+
+.breakLine {
   position: relative;
 }
-.breakLine:after{
+
+.breakLine:after {
   content: "";
   position: absolute;
-  left:0;
-  top:0;
-  width: 50px;
-  height: 80px;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 60px;
   background: url('../image/playGame/duanwang.png') no-repeat;
-  background-size: 40px;
-  background-position:5px 20px;
-  background-color: rgba(0,0,0,.6);
+  background-size: 24px;
+  background-position: 5px 20px;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 5px;
 }
-.sahngxian{
+
+.sahngxian {
   position: absolute;
   bottom: 10px;
   padding: 5px 10px;
   border-radius: 30px;
   left: 50%;
-  margin-left:-35px;
-  background: rgba(0,0,0,.3);
+  margin-left: -35px;
+  background: rgba(0, 0, 0, .3);
 }
-.ready{
+
+.ready {
   position: absolute;
   width: 90px;
   height: 35px;
-  bottom: 150px;
+  bottom: 120px;
   left: 50%;
+  margin-left: -45px;
   background: url('../image/playGame/zhunbei.png');
-  background-size: 90px 45px;
+  background-size: 90px 35px;
 }
-.gameIcon{
+
+.gameIcon {
   position: absolute;
-  width: 225px;
+  width: 180px;
   height: 170px;
-  bottom: 250px;
+  top: 200px;
   left: 50%;
-  margin-left: -112px;
-  background: rgba(0,0,0,.3);
+  margin-left: -90px;
+  background: rgba(0, 0, 0, .3);
 }
-.gameIcon ul{
+
+.gameIcon ul {
   width: 100%;
   height: 100%;
   background: url('../image/playGame/game1.png') no-repeat;
-  background-size: 230px 175px;
+  background-size: 183px 175px;
   background-position: -2px -1px;
 }
-.gameIcon ul li{
-  width:75px;
+
+.gameIcon ul li {
+  width: 60px;
   height: 85px;
   float: left;
+  position: relative;
 }
-.addborder{
+.gameIcon ul li em{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, .3);
+  line-height: 30px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+.addborder {
   position: relative;
   /* box-shadow: rgba(218, 137, 56, 0.8) 0px 0px 3px 1px; */
 }
-.addborder::after{
+
+.addborder::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -216,7 +267,8 @@ html,body{
   box-sizing: border-box;
   border: 1px solid rgb(218, 137, 56);
 }
-.timelock{
+
+.timelock {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -230,7 +282,9 @@ html,body{
   font-size: 16px;
   font-weight: bold;
 }
-.gameKing,.betterKing{
+
+.gameKing,
+.betterKing {
   position: absolute;
   width: 160px;
   height: 35px;
@@ -238,32 +292,41 @@ html,body{
   left: 20%;
   display: -webkit-box;
 }
-.gameKing div,.betterKing div{
+
+.gameKing div,
+.betterKing div {
   -webkit-box-flex: 1;
 }
+
 .gameKing div:nth-child(1) {
   background: url(../image/playGame/006.png) no-repeat;
   background-size: 75px 35px;
   margin-right: 10px;
 }
+
 .gameKing div:nth-child(2) {
   background: url(../image/playGame/005.png) no-repeat;
   background-size: 75px 35px;
 }
+
 .betterKing div:nth-child(1) {
   background: url(../image/playGame/001.png) no-repeat;
   background-size: 75px 35px;
   margin-right: 10px;
 }
+
 .betterKing div:nth-child(2) {
   background: url(../image/playGame/002.png) no-repeat;
   background-size: 75px 35px;
 }
-.betterKing{
+
+.betterKing {
   left: 50%;
   bottom: 120px;
 }
-.numMen,.money{
+
+.numMen,
+.money {
   position: absolute;
   width: 160px;
   height: 35px;
@@ -271,50 +334,66 @@ html,body{
   left: 20%;
   display: -webkit-box;
 }
-.money{
+
+.money {
   width: 225px;
 }
-.numMen div,.money div{
+
+.numMen div,
+.money div {
   -webkit-box-flex: 1;
 }
+.money div.active{
+  margin-top: -10px;
+}
+
 .numMen div:nth-child(1) {
   background: url(../image/playGame/ermen.png) no-repeat;
   background-size: 75px 35px;
   margin-right: 10px;
 }
+
 .numMen div:nth-child(2) {
   background: url(../image/playGame/sanmen.png) no-repeat;
   background-size: 75px 35px;
 }
+
 .money div:nth-child(1) {
   background: url(../image/playGame/10.png) no-repeat center;
   background-size: 35px 35px;
 }
+
 .money div:nth-child(2) {
   background: url(../image/playGame/20.png) no-repeat center;
   background-size: 35px 35px;
 }
+
 .money div:nth-child(3) {
   background: url(../image/playGame/30.png) no-repeat center;
   background-size: 35px 35px;
 }
+
 .money div:nth-child(4) {
   background: url(../image/playGame/50.png) no-repeat center;
   background-size: 35px 35px;
 }
+
 .money div:nth-child(5) {
   background: url(../image/playGame/100.png) no-repeat center;
   background-size: 35px 35px;
 }
+
 .money div:nth-child(6) {
   background: url(../image/playGame/200.png) no-repeat center;
   background-size: 35px 35px;
 }
+
 .money div:nth-child(7) {
   background: url(../image/playGame/500.png) no-repeat center;
   background-size: 35px 35px;
 }
-.quickOrsm{
+
+.quickOrsm {
   position: absolute;
   width: 160px;
   height: 35px;
@@ -322,59 +401,70 @@ html,body{
   right: 20%;
   display: -webkit-box;
 }
-.quickOrsm div{
+
+.quickOrsm div {
   -webkit-box-flex: 1;
 }
-.quickOrsm div:nth-child(1){
+
+.quickOrsm div:nth-child(1) {
   background: url('../image/playGame/kuaikai.png') no-repeat;
   background-size: 100% 100%;
   margin-right: 10px;
 }
-.quickOrsm div:nth-child(2){
+
+.quickOrsm div:nth-child(2) {
   background: url('../image/playGame/mankai.png') no-repeat;
   background-size: 100% 100%;
 }
-.money{
+
+.money {
   bottom: 100px;
 }
-.stopSet{
+
+.stopSet {
   position: absolute;
   width: 90px;
   height: 35px;
-  bottom:10px;
+  bottom: 10px;
   right: 10%;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, .3);
 }
-.iconSetting{
+
+.iconSetting {
   position: absolute;
-  width: 50px;
-  bottom:10px;
-  right: 10px;
+  width: 40px;
+  bottom: 10px;
+  right: 0px;
 }
-.iconSetting .iconPic{
-  width: 50px;
-  height: 50px;
+
+.iconSetting .iconPic {
+  width: 30px;
+  height: 30px;
   text-align: center;
-  line-height: 50px;
   margin-top: 10px;
 }
-.iconSetting .iconPic:nth-child(1){
+
+.iconSetting .iconPic:nth-child(1) {
   background: url('../image/playGame/shengyin.png') no-repeat;
   background-size: 100%;
 }
-.iconSetting .iconPic.closeSy:nth-child(1){
+
+.iconSetting .iconPic.closeSy:nth-child(1) {
   background: url('../image/playGame/yinxiaoguan.png') no-repeat;
   background-size: 100%;
 }
-.iconSetting .iconPic:nth-child(2){
+
+.iconSetting .iconPic:nth-child(2) {
   background: url('../image/playGame/fangfa.png') no-repeat;
   background-size: 100%;
 }
-.iconSetting .iconPic:nth-child(3){
+
+.iconSetting .iconPic:nth-child(3) {
   background: url('../image/playGame/xiaoxi.png') no-repeat;
   background-size: 100%;
 }
-.allMoeny{
+
+.allMoeny {
   position: absolute;
   width: 90px;
   height: 35px;
@@ -382,4 +472,270 @@ html,body{
   left: 20%;
   background: url('../image/playGame/anniu.png') no-repeat;
   background-size: 100%;
+}
+
+.joinFail,
+.xieyi,
+.gouka ,.liaotianbg,.jushu{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .6);
+  display: none;
+}
+.liaotian,.jushucon{
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  width: 200px;
+  height: 305px;
+  background: url('../image/playGame/ltbg.png');
+  background-size: 100%;
+  padding: 15px 15px;
+  color: rgb(218, 137, 56);
+  display: none;
+}
+.jushucon{
+  bottom: 40px;
+  height: auto;
+  border-radius: 10px;
+  background-size: 100% 100%;  
+} 
+.jushucon div {
+  font-size: 0;
+  position: relative;
+}
+.jushucon div span{
+  width: 33.333%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+}
+.jushucon div:after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  left:0;
+  bottom: -1px;
+  background: url('../image/playGame/fgx.png');
+  background-size: 100% 100%;
+}
+.liaotian .liaotianCon div{
+  height: 30px;
+  background: rgba(218, 137, 56, .3);
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.liaotian .liaotianCon div:last-child{
+  margin: 0;
+}
+.liaotianbg{
+  background: none;
+}
+.showWin {
+  position: fixed;
+  z-index: 999;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  top: 50px;
+  max-height: 500px;
+  overflow-y: scroll;
+  display: none;
+}
+
+.showWin div {
+  width: 300px;
+  margin: 0px auto;
+}
+
+.showWin div img {
+  width: 100%;
+}
+
+.failCon,
+.xieyiCon {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  height: 210px;
+  top: 50%;
+  margin-top: -105px;
+  border-radius: 15px;
+  padding: 7px;
+  background: url(../image/playGame/closebg.png) no-repeat;
+  background-size: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.xieyiCon {
+  height: 330px;
+  margin-top: -165px;
+  background: url(../image/playGame/xybg.png) no-repeat;
+  background-size: 100%;
+  padding: 40px 20px;
+  color: #b66700;
+}
+
+.xieyiCon .text {
+  height: 220px;
+  overflow-y: scroll;
+}
+
+.xieyiCon .xieyibtn {
+  width: 120px;
+  margin: 0 auto;
+  height: 40px;
+  background: url(../image/playGame/qd.png) no-repeat center center;
+  background-size: 120px;
+}
+
+.failCon .text {
+  color: #b66700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 115px;
+}
+
+.failCon .failBtns {
+  position: absolute;
+  width: 260px;
+  left: 20px;
+  bottom: 15px;
+  display: -webkit-box;
+  height: 60px;
+}
+
+.failCon .failBtns div {
+  -webkit-box-flex: 1;
+}
+
+.failBtns .no {
+  background: url(../image/playGame/close12.png) no-repeat center center;
+  background-size: 120px;
+}
+
+.failBtns .ok {
+  background: url(../image/playGame/backhome.png) no-repeat center center;
+  background-size: 120px;
+}
+.yaozhong{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: red;
+  left: 50%;
+  margin-left: -50px;
+  top:80px;
+}
+.yaozhong .wan1{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url('../image/playGame/wan1.png');
+  background-size: 100% 100%;
+  left:5px;
+  top:5px;
+  z-index: 40;
+  /*display: none;*/
+}
+.yaozhong .wan2{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: url('../image/playGame/wan2.png');
+  background-size: 100% 100%;
+  left:0;
+  top:0;
+  z-index: 9;
+}
+.se1{
+  position: absolute;
+  width:60px;
+  height: 50px;
+  z-index: 20;
+  top:30px;
+  left:10px;
+}
+.se1.ad01{
+  background: url('../image/playGame/1-0.png') no-repeat;
+  background-size: 100%;
+}
+.se1.ad02{
+  background: url('../image/playGame/2-0.png') no-repeat;
+  background-size: 100%;
+}
+.se1.ad03{
+  background: url('../image/playGame/3-0.png') no-repeat;
+  background-size: 100%;
+}
+.se1.ad04{
+  background: url('../image/playGame/4-0.png') no-repeat;
+  background-size: 100%;
+}
+.se1.ad05{
+  background: url('../image/playGame/5-0.png') no-repeat;
+  background-size: 100%;
+}
+.se1.ad06{
+  background: url('../image/playGame/6-0.png') no-repeat;
+  background-size: 100%;
+}
+.se2{
+  position: absolute;
+  width:45px;
+  height: 60px;
+  background: url('../image/playGame/1-1.png') no-repeat;
+  z-index: 20;
+  background-size: 100%;
+  top:20px;
+  left:50px
+}
+.se2.ad01{
+  background: url('../image/playGame/1-1.png') no-repeat;
+  background-size: 100%;
+}
+.se2.ad02{
+  background: url('../image/playGame/2-1.png') no-repeat;
+  background-size: 100%;
+}
+.se2.ad03{
+  background: url('../image/playGame/3-1.png') no-repeat;
+  background-size: 100%;
+}
+.se2.ad04{
+  background: url('../image/playGame/4-1.png') no-repeat;
+  background-size: 100%;
+}
+.se2.ad05{
+  background: url('../image/playGame/5-1.png') no-repeat;
+  background-size: 100%;
+}
+.se2.ad06{
+  background: url('../image/playGame/6-1.png') no-repeat;
+  background-size: 100%;
+}
+.timelock,.allMoeny,.gameKing,.betterKing,.quickOrsm,.stopSet,.money{
+  display: none;
+}
+.headPortrait.readyBox{
+  position: absolute;
+}
+.readyBox::after{
+  content: '已准备';
+  position: absolute;
+  width: 40px;
+  height: 24px;
+  right: -30px;
+  top: 10px;
+  background: red;
+  background-size: cover;
+  z-index: 999999;
+  font-size: 12px;
 }

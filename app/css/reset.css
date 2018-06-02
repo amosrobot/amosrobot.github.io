@@ -11,7 +11,7 @@ body { font-size:12px; color:#666; font-family:"微软雅黑",Verdana,"宋体"; 
 fieldset, img { border:0; display:block; /*防止图片底下3像素的空白缝隙 */}
 ol, ul { list-style:none; }
 h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal; /*初始化标题*/}
-em { font-style:normal;/* 让斜体改为正常的*/}
+em,i { font-style:normal;/* 让斜体改为正常的*/}
 input, button, select, textarea { border:0; outline:none; /*去掉谷歌 360等表单的蓝色边框*/ } 
 textarea { resize:none;/*防止谷歌等浏览器 textarea 可以拖动*/}
 a { color: #fff; text-decoration:none; }

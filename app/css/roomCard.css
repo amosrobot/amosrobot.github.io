@@ -1,6 +1,13 @@
 .header{
   display: -webkit-box;
-  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  top:0px;
+  left:0;
+  background: #fff;
+  z-index: 9;
 }
 .back,.right{
   width: 50px;
@@ -30,7 +37,12 @@
   color: #fff;
 }
 .conter{
-  padding: 20px;
+  padding : 90px 20px 0 20px;
+  position: absolute;
+  width: 100%;
+  top:0;
+  left:0;
+  overflow: hidden;
 }
 .list{
   display: none;

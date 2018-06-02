@@ -70,16 +70,11 @@ body {
   position: absolute;
 }
 
-.headPortrait.kingBox {
-  position: absolute;
-}
-
-.headPortrait.kingBox::after {
-  content: '';
+.headPortrait .kingBox{
   position: absolute;
   width: 24px;
   height: 24px;
-  right: -5px;
+  left: 20px;
   top: -5px;
   background: url('../image/playGame/zhuang.png') no-repeat;
   background-size: cover;
@@ -181,20 +176,16 @@ body {
   text-align: center;
 }
 
-.breakLine {
-  position: relative;
-}
 
-.breakLine:after {
-  content: "";
+.breakLine {
   position: absolute;
   left: 0;
   top: 0;
-  width: 40px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   background: url('../image/playGame/duanwang.png') no-repeat;
   background-size: 24px;
-  background-position: 5px 20px;
+  background-position: center center;
   background-color: rgba(0, 0, 0, .6);
   border-radius: 5px;
 }
@@ -724,11 +715,10 @@ body {
 .timelock,.allMoeny,.gameKing,.betterKing,.quickOrsm,.stopSet,.money{
   display: none;
 }
-.headPortrait.readyBox{
+/*.headPortrait.readyBox{
   position: absolute;
-}
-.readyBox::after{
-  content: '已准备';
+}*/
+.readyBox{
   position: absolute;
   width: 40px;
   height: 24px;
@@ -738,4 +728,12 @@ body {
   background-size: cover;
   z-index: 999999;
   font-size: 12px;
+}
+.ismainrequest .people{
+  width: 50px;
+  height: 80px;
+}
+.ismainrequest .people img{
+  width: 40px;
+  height: 40px;
 }

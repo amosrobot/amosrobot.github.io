@@ -5,7 +5,7 @@ body{
 }
 header{
   height: 55px;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   right: 0;
   left: 0;
@@ -130,6 +130,7 @@ header{
 }
 .content{
   padding-top: 55px;
+  /*overflow-y: scroll;*/
 }
 .mui-table-view.mui-grid-view {
   font-size: 0;

@@ -1,24 +1,5 @@
 var hrefUrl = window.location.href;
 var timeNum = null;
-var initData = {
-  userId: config.byUrl('userId'),
-  roomId: +config.byUrl('roomId'),
-  rule: +config.byUrl('rule'),
-  playerNum: +config.byUrl('playerNum'),
-  clip: +config.byUrl('clip'),
-  upper: +config.byUrl('upper'),
-  special: +config.byUrl('special'),
-  roundNumber: +config.byUrl('roundNumber'),
-  mainType: +config.byUrl('mainType')
-}
-function msg(m){
-  dialogView.msg({
-    message: m,
-    showTime: 1500
-  })
-}
-var ws = new WebSocket("ws://193.112.6.245:8082/websocket");
-
 var agreement = {
   //创建房间
   CREATEROOMREQUEST: 1001,
@@ -62,44 +43,54 @@ var agreement = {
   //是庄
   ISMAINREQUEST: 3001,
 }
-var json = {
+var initData = {
   userId: config.byUrl('userId'),
-  roomId: 1,
-  rule: 1,
-  playerNum: 1,
-  clip: 1,
-  upper: 100,
-  special: 1,
-  roundNumber: 12,
-  mainType: 1,
-  messageCode: agreement.CREATEROOMREQUEST
+  roomId: +config.byUrl('roomId'),
+  rule: +config.byUrl('rule'),
+  playerNum: +config.byUrl('playerNum'),
+  clip: +config.byUrl('clip'),
+  upper: +config.byUrl('upper'),
+  special: +config.byUrl('special'),
+  roundNumber: +config.byUrl('roundNumber'),
+  mainType: +config.byUrl('mainType'),
+  messageCode:agreement.CREATEROOMREQUEST
 }
+function msg(m){
+  dialogView.msg({
+    message: m,
+    showTime: 1500
+  })
+}
+function send(msg) {
+  switch (ws.readyState) {
+    case WebSocket.CONNECTING:
+      msg('表示正在连接')
+      break;
+    case WebSocket.OPEN:
+      ws.send(JSON.stringify(msg));
+      break;
+    case WebSocket.CLOSING:
+      msg('表示连接正在关闭')
+      break;
+    case WebSocket.CLOSED:
+      msg('表示连接已经关闭，或者打开连接失败。')
+      break;
+    default:
+      msg('未知错误')
+      break;
+  }
+}
+
+var ws = new WebSocket("ws://193.112.6.245:8082/websocket");
 ws.onopen = function (evt) {
   console.log("Connection open ...");
-  ws.send(JSON.stringify(json));
+  if(config.byUrl('userId') === ""){
+    initData.messageCode = agreement.INTOROOMREQUEST
+  }
+  send(initData);
 };
 
-function send() {
-  return function(msg){
-    switch (ws.readyState) {
-      case WebSocket.CONNECTING:
-        // do something
-        break;
-      case WebSocket.OPEN:
-        ws.send(msg);
-        break;
-      case WebSocket.CLOSING:
-        // do something
-        break;
-      case WebSocket.CLOSED:
-        // do something
-        break;
-      default:
-        // this never happens
-        break;
-    }
-  };
-}
+
 ws.onmessage = function (evt) {
   try {
     var data = JSON.parse(evt.data)
@@ -194,6 +185,15 @@ $(function () {
   $('.liaotian .liaotianCon div').click(function () {
     console.log($(this).text() + '调用协议传输')
   })
+  // 游戏开始环节
+  $('.ready').click(function () {
+    console.log('开始');
+    send({
+      userId: config.byUrl('userId'),
+      messageCode: agreement.PREPAREREQUEST
+    })
+    $('.ready').hide();
+  })
   $('.iconPic').eq(1).click(function () {
     $('.jushu,.jushucon').show()
   })
@@ -225,14 +225,7 @@ $(function () {
     console.log('不抢');
     ws.send()
   })
-  $('.ready').click(function () {
-    console.log('开始');
-    ws.send(JSON.stringify({
-      userId: config.byUrl('userId'),
-      messageCode: agreement.PREPAREREQUEST
-    }))
-    $('.ready').hide();
-  })
+  
   $('.stopSet').click(function () {
     console.log('停止下注');
     ws.send()
@@ -261,7 +254,6 @@ $(function () {
     }
   })
 })
-
 function addClock(curCount, callback) {
   clearInterval(timeNum)
   timeNum = setInterval(function () {
@@ -273,5 +265,8 @@ function addClock(curCount, callback) {
       $('.timelock').html(curCount);
     }
   }, 1000);
+}
+function addRandom(){
+  var num = Math.floor(Math.random()*(m - n) + n);
 }
 // addClock(10,function(){console.log('122')})

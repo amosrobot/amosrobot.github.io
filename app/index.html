@@ -36,66 +36,69 @@
       </div>
     </div>
   </header>
-
-  <div class="content">
-    <ul class="mui-table-view mui-grid-view" id="wrapper">
-      <li class="mui-table-view-cell mui-media mui-col-xs-6">
-        <a href="javascript:void(0);" class="openWin">
-          <div class="spat">
-            <img class="mui-media-object" src="image/list1.png">
-          </div>
-        </a>
-      </li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-6">
-        <a href="javascript:void(0);" class="openWin">
-          <div class="spat">
-            <img class="mui-media-object" src="image/list2.png">
-          </div>
-        </a>
-      </li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-6">
-        <a href="javascript:void(0);" class="openWin">
-          <div class="spat">
-            <img class="mui-media-object" src="image/list3.png">
-          </div>
-        </a>
-      </li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-6">
-        <a href="javascript:void(0);" class="openWin">
-          <div class="spat">
-            <img class="mui-media-object" src="image/list4.png">
-          </div>
-        </a>
-      </li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-6">
-        <a href="javascript:void(0);" class="openWin">
-          <div class="spat">
-            <img class="mui-media-object" src="image/list5.png">
-          </div>
-        </a>
-      </li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-6">
-        <a href="javascript:void(0);" class="openWin">
-          <div class="spat">
-            <img class="mui-media-object" src="image/list6.png">
-          </div>
-        </a>
-      </li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-6">
-        <a href="javascript:void(0);" class="openWin">
-          <div class="spat">
-            <img class="mui-media-object" src="image/list7.png">
-          </div>
-        </a>
-      </li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-6">
-        <a href="javascript:void(0);" class="openWin">
-          <div class="spat">
-            <img class="mui-media-object" src="image/list8.png">
-          </div>
-        </a>
-      </li>
-    </ul>
+  <div class="mui-scroll-wrapper">
+    <div class="mui-scroll">
+      <div class="content">
+        <ul class="mui-table-view mui-grid-view" id="wrapper">
+          <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="javascript:void(0);" class="openWin">
+              <div class="spat">
+                <img class="mui-media-object" src="image/list1.png">
+              </div>
+            </a>
+          </li>
+          <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="javascript:void(0);" class="openWin">
+              <div class="spat">
+                <img class="mui-media-object" src="image/list2.png">
+              </div>
+            </a>
+          </li>
+          <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="javascript:void(0);" class="openWin">
+              <div class="spat">
+                <img class="mui-media-object" src="image/list3.png">
+              </div>
+            </a>
+          </li>
+          <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="javascript:void(0);" class="openWin">
+              <div class="spat">
+                <img class="mui-media-object" src="image/list4.png">
+              </div>
+            </a>
+          </li>
+          <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="javascript:void(0);" class="openWin">
+              <div class="spat">
+                <img class="mui-media-object" src="image/list5.png">
+              </div>
+            </a>
+          </li>
+          <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="javascript:void(0);" class="openWin">
+              <div class="spat">
+                <img class="mui-media-object" src="image/list6.png">
+              </div>
+            </a>
+          </li>
+          <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="javascript:void(0);" class="openWin">
+              <div class="spat">
+                <img class="mui-media-object" src="image/list7.png">
+              </div>
+            </a>
+          </li>
+          <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="javascript:void(0);" class="openWin">
+              <div class="spat">
+                <img class="mui-media-object" src="image/list8.png">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
   <div class="showWinBg"></div>
   <div class="showWin">
@@ -281,7 +284,9 @@
       signature: '',
       jsApiList: []
     });
-
+    mui('.mui-scroll-wrapper').scroll({
+      deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    });
   </script>
   <script src="js/index.js"></script>
 </body>

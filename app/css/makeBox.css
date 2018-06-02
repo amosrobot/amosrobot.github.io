@@ -24,9 +24,10 @@
 .span_one em{
   padding: 5px 15px;
   height: 30px;
+  line-height: 30px;
   margin-left: 10px;
   background: url('../image/mark1.png') no-repeat;
-  background-size: 60px 25px;
+  background-size: 50px 25px;
 }
 .conter{
   padding:60px 20px;

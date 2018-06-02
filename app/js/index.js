@@ -25,9 +25,9 @@ $(function () {
       .removeClass("active");
   });
   api.login({
-    nickName: '123',
+    nickName: 11,
     headIcon: "https://oa.tydic.com/css/images/newIndex/left_photo22.png",
-    openId: '456789',
+    openId: 12345,
     province: "江苏",
     city: "南京",
     sex: 1

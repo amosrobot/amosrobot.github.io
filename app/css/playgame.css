@@ -474,7 +474,7 @@ body {
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, .6);
-  z-index: 9999999;
+  z-index: 100;
   display: none;
 }
 .liaotian,.jushucon{
@@ -488,6 +488,7 @@ body {
   padding: 15px 15px;
   color: rgb(218, 137, 56);
   display: none;
+  z-index: 999;
 }
 .jushucon{
   bottom: 40px;

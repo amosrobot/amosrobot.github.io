@@ -474,6 +474,7 @@ body {
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, .6);
+  z-index: 9999999;
   display: none;
 }
 .liaotian,.jushucon{

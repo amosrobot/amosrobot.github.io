@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>葫芦鱼</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/makeBox.css">
+</head>
+
+<body id="app">
+  <div class="top">
+    <span class="span1" onclick="history.go(-1)"></span>
+    <span class="span_one">我的房卡<em>36张</em></span>
+  </div>
+  <div class="conter">
+    <div class="cartNum">
+      <div class="text">放入房卡</div>
+      <div class="input">
+        <input type="text" id="inputChange" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
+        onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}" placeholder="填写房卡数">
+      </div>
+      <div class="text1">张</div>
+    </div>
+    <div class="numLen">
+      <span>0</span>
+      <em>张</em>
+    </div>
+  <div class="btn1 btn"></div>
+  </div>
+  <a href="../page/roomCard.html"><div class="btn2 btn"></div></a>
+  <script src="../js/jq.js"></script>
+  <!-- <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> -->
+  <script src="../js/makeBox.js"></script>
+</body>
+
+</html>

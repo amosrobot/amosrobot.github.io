@@ -1,0 +1,131 @@
+#app {
+  background: #1a1d22;
+}
+.headerTitle {
+  -webkit-box-flex: 1;
+  font-size: 16px;
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e5c68a;
+}
+.header {
+  display: -webkit-box;
+  background: url("../image/profileBg.png");
+  background-size: 100% 50px;
+}
+.back,
+.right {
+  width: 80px;
+  height: 50px;
+}
+.back {
+  background: url("../image/back3.png") no-repeat center center;
+  background-size: 80px 50px;
+}
+.change {
+  margin: 10px 0;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  font-size: 16px;
+  overflow: hidden;
+  background: url("../image/profileng.png");
+  background-size: 100% 45px;
+  /* box-shadow: rgba(218, 137, 56, 0.8) 0px 0px 0px 2px; */
+}
+.get,
+.set {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 45px;
+}
+.addBg {
+  position: relative;
+}
+.addBg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #e5c68a;
+  bottom: 0px;
+  left: 0;
+}
+.list {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* .title,.detail{
+  display: -webkit-box;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.title .emp,.time{
+  -webkit-box-flex: 1;
+}
+.title .num,.state{
+  width: 80px;
+  text-align: right;
+}
+.detail{
+  color: rgba(218, 137, 56, 0.8);
+} */
+.conter ul li {
+  padding: 0 10px;
+  background: url("../image/profileng.png");
+  background-size: 100% 80px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  font-size: 14px;
+  color: #e5c68a;
+}
+.mediePic {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+}
+.mediePic img {
+  width: 100%;
+  height: 100%;
+}
+.detail {
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+}
+.detail span {
+  font-size: 24px;
+  display: inline-block;
+  width: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.detail span.lose {
+  color: #afafaf;
+}
+.detail em {
+  display: inline-block;
+  vertical-align: top;
+  background: url("../image/back1.png") no-repeat;
+  background-size: 12px 30px;
+  width: 20px;
+  height: 30px;
+  margin-top: 25px;
+  float: right;
+}
+.title {
+  -webkit-box-flex: 1;
+}
+.title .emp {
+  height: 40px;
+  line-height: 40px;
+}
+.conter ul li:last-child {
+  border-bottom: none;
+}

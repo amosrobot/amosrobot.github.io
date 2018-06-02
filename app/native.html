@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>葫芦鱼</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/dialog.css">
+</head>
+
+<body>
+  <script src="js/jq.js"></script>
+  <script src="js/dialog.js"></script>
+  <script>
+    dialogView.confirm({
+      message: "本页面只能在微信页面展示"
+    });
+    $.ajax({
+      type:"POST",
+      url:'http://193.112.6.245:8082/fishWebController/login',
+      data:{
+        nickName:'name',
+        headIcon:'headIcon',
+        openId:'wxID',
+        province :'province',
+        city:'city',
+        sex :1
+      },
+      success:function(){
+        console.log('111')
+      }
+    })
+  </script>
+</body>
+
+</html>

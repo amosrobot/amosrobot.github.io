@@ -1,0 +1,385 @@
+#app{
+  padding: 0 10px;
+  background: #0bc884;
+  color: #fff;
+}
+#app .mobile-dialogView {
+  color: #333;
+}
+html,body{
+  overflow: hidden;
+  position: relative;
+}
+.cartnum{
+  margin: 10px 0px;
+}
+.cartnum span{
+  background: rgba(0,0,0,.3);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.tipbtn{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  display: -webkit-box;
+  background: url('../image/playGame/bantouming.png') no-repeat;
+  background-size: 170px 40px;
+  padding: 0 10px;
+}
+.tipbtn .minBtn{
+  -webkit-box-flex: 1;
+  width: 50px;
+  height: 40px;
+}
+.tipbtn .minBtn:nth-child(1){
+  background: url('../image/playGame/tishi.png') no-repeat center center;
+  background-size:35px 35px;
+}
+.tipbtn .minBtn:nth-child(2){
+  background: url('../image/playGame/tishi.png') no-repeat center center;
+  background-size:35px 35px;
+}
+.tipbtn .minBtn:nth-child(3){
+  background: url('../image/playGame/tishi.png') no-repeat center center;
+  background-size:35px 35px;
+}
+.seat{
+  position: absolute;
+  left: 0;
+  top:15px;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  z-index: -1;
+}
+.headPortrait{
+  margin-bottom: 30px;
+  position: absolute;
+}
+.headPortrait.kingBox{
+  position: absolute;
+}
+.headPortrait.kingBox::after{
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: -5px;
+  top: -5px;
+  background: url('../image/playGame/zhuang.png') no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+.headPortrait .dft{
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  line-height: 28px;
+  text-align: center;
+  background: rgba(0,0,0,.3);
+}
+.seat .headPortrait:nth-child(1){
+  top:60px;
+  left:10;
+}
+.seat .headPortrait:nth-child(2){
+  top:150px;
+  left:10;
+}
+.seat .headPortrait:nth-child(3){
+  top:240px;
+  left:10;
+}
+.seat .headPortrait:nth-child(4){
+  top:330px;
+  left:10;
+}
+.seat .headPortrait:nth-child(5){
+  top:420px;
+  left:10;
+}
+.seat .headPortrait:nth-child(6){
+  top:auto;
+  bottom: 10px;
+  left:10;
+}
+.seat .headPortrait:nth-child(7){
+  top:330px;
+  right: 10px;
+}
+.seat .headPortrait:nth-child(8){
+  top:240px;
+  right: 10px;
+}
+.seat .headPortrait:nth-child(9){
+  top:150px;
+  right: 10px;
+}
+.seat .headPortrait:nth-child(10){
+  top:60px;
+  right: 10px;
+}
+.seat .headPortrait:nth-child(11){
+  top:60px;
+  right:100px
+}
+.seat .headPortrait:nth-child(12){
+  top:60px;
+  left: 100px;
+}
+.people{
+  padding: 5px;
+  background: rgba(0,0,0,.3);
+  width: 50px;
+  border-radius: 5px;
+}
+.people img{
+  width: 40px;
+  height: 40px;
+}
+.people .userName{
+  line-height: 16px;
+}
+.people .num{
+  line-height: 12px;
+  text-align: center;
+}
+.userPic{
+  width: 40px;
+  height: 40px;
+}
+.breakLine{
+  position: relative;
+}
+.breakLine:after{
+  content: "";
+  position: absolute;
+  left:0;
+  top:0;
+  width: 50px;
+  height: 80px;
+  background: url('../image/playGame/duanwang.png') no-repeat;
+  background-size: 40px;
+  background-position:5px 20px;
+  background-color: rgba(0,0,0,.6);
+}
+.sahngxian{
+  position: absolute;
+  bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  left: 50%;
+  margin-left:-35px;
+  background: rgba(0,0,0,.3);
+}
+.ready{
+  position: absolute;
+  width: 90px;
+  height: 35px;
+  bottom: 150px;
+  left: 50%;
+  background: url('../image/playGame/zhunbei.png');
+  background-size: 90px 45px;
+}
+.gameIcon{
+  position: absolute;
+  width: 225px;
+  height: 170px;
+  bottom: 250px;
+  left: 50%;
+  margin-left: -112px;
+  background: rgba(0,0,0,.3);
+}
+.gameIcon ul{
+  width: 100%;
+  height: 100%;
+  background: url('../image/playGame/game1.png') no-repeat;
+  background-size: 230px 175px;
+  background-position: -2px -1px;
+}
+.gameIcon ul li{
+  width:75px;
+  height: 85px;
+  float: left;
+}
+.addborder{
+  position: relative;
+  /* box-shadow: rgba(218, 137, 56, 0.8) 0px 0px 3px 1px; */
+}
+.addborder::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(218, 137, 56);
+}
+.timelock{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 180px;
+  left: 50%;
+  margin-left: -25px;
+  background: url('../image/playGame/lock.png') no-repeat;
+  background-size: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.gameKing,.betterKing{
+  position: absolute;
+  width: 160px;
+  height: 35px;
+  bottom: 140px;
+  left: 20%;
+  display: -webkit-box;
+}
+.gameKing div,.betterKing div{
+  -webkit-box-flex: 1;
+}
+.gameKing div:nth-child(1) {
+  background: url(../image/playGame/006.png) no-repeat;
+  background-size: 75px 35px;
+  margin-right: 10px;
+}
+.gameKing div:nth-child(2) {
+  background: url(../image/playGame/005.png) no-repeat;
+  background-size: 75px 35px;
+}
+.betterKing div:nth-child(1) {
+  background: url(../image/playGame/001.png) no-repeat;
+  background-size: 75px 35px;
+  margin-right: 10px;
+}
+.betterKing div:nth-child(2) {
+  background: url(../image/playGame/002.png) no-repeat;
+  background-size: 75px 35px;
+}
+.betterKing{
+  left: 50%;
+  bottom: 120px;
+}
+.numMen,.money{
+  position: absolute;
+  width: 160px;
+  height: 35px;
+  bottom: 50px;
+  left: 20%;
+  display: -webkit-box;
+}
+.money{
+  width: 225px;
+}
+.numMen div,.money div{
+  -webkit-box-flex: 1;
+}
+.numMen div:nth-child(1) {
+  background: url(../image/playGame/ermen.png) no-repeat;
+  background-size: 75px 35px;
+  margin-right: 10px;
+}
+.numMen div:nth-child(2) {
+  background: url(../image/playGame/sanmen.png) no-repeat;
+  background-size: 75px 35px;
+}
+.money div:nth-child(1) {
+  background: url(../image/playGame/10.png) no-repeat center;
+  background-size: 35px 35px;
+}
+.money div:nth-child(2) {
+  background: url(../image/playGame/20.png) no-repeat center;
+  background-size: 35px 35px;
+}
+.money div:nth-child(3) {
+  background: url(../image/playGame/30.png) no-repeat center;
+  background-size: 35px 35px;
+}
+.money div:nth-child(4) {
+  background: url(../image/playGame/50.png) no-repeat center;
+  background-size: 35px 35px;
+}
+.money div:nth-child(5) {
+  background: url(../image/playGame/100.png) no-repeat center;
+  background-size: 35px 35px;
+}
+.money div:nth-child(6) {
+  background: url(../image/playGame/200.png) no-repeat center;
+  background-size: 35px 35px;
+}
+.money div:nth-child(7) {
+  background: url(../image/playGame/500.png) no-repeat center;
+  background-size: 35px 35px;
+}
+.quickOrsm{
+  position: absolute;
+  width: 160px;
+  height: 35px;
+  bottom: 50px;
+  right: 20%;
+  display: -webkit-box;
+}
+.quickOrsm div{
+  -webkit-box-flex: 1;
+}
+.quickOrsm div:nth-child(1){
+  background: url('../image/playGame/kuaikai.png') no-repeat;
+  background-size: 100% 100%;
+  margin-right: 10px;
+}
+.quickOrsm div:nth-child(2){
+  background: url('../image/playGame/mankai.png') no-repeat;
+  background-size: 100% 100%;
+}
+.money{
+  bottom: 100px;
+}
+.stopSet{
+  position: absolute;
+  width: 90px;
+  height: 35px;
+  bottom:10px;
+  right: 10%;
+  background: rgba(0,0,0,.3);
+}
+.iconSetting{
+  position: absolute;
+  width: 50px;
+  bottom:10px;
+  right: 10px;
+}
+.iconSetting .iconPic{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 10px;
+}
+.iconSetting .iconPic:nth-child(1){
+  background: url('../image/playGame/shengyin.png') no-repeat;
+  background-size: 100%;
+}
+.iconSetting .iconPic.closeSy:nth-child(1){
+  background: url('../image/playGame/yinxiaoguan.png') no-repeat;
+  background-size: 100%;
+}
+.iconSetting .iconPic:nth-child(2){
+  background: url('../image/playGame/fangfa.png') no-repeat;
+  background-size: 100%;
+}
+.iconSetting .iconPic:nth-child(3){
+  background: url('../image/playGame/xiaoxi.png') no-repeat;
+  background-size: 100%;
+}
+.allMoeny{
+  position: absolute;
+  width: 90px;
+  height: 35px;
+  bottom: 180px;
+  left: 20%;
+  background: url('../image/playGame/anniu.png') no-repeat;
+  background-size: 100%;
+}

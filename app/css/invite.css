@@ -1,0 +1,198 @@
+.warp{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.invite,.joinSuccess,.joinFail,.msgInfo,.joinMsg{
+  position: absolute;
+  left:0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,.6);
+  display: none;
+}
+.joinMsg{
+  display: block;
+}
+.joinMsgfoCon{
+  width: 300px;
+  position: absolute;
+  height: 450px;
+  left: 50%;
+  margin-left: -150px;
+  top:50%;
+  margin-top: -225px;
+  background: url('../image/yaoqing.png') no-repeat;
+  background-size: 100% ;
+}
+.joinMsgbtn{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url('../image/jiaru.png') no-repeat;
+  background-size: 100% ;
+  bottom: 70px;
+  left: 50%;
+  margin-left:-40px;
+}
+.joinMsgPic{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url('../image/picdikuang.png') no-repeat;
+  background-size: 100% ;
+  top: 40px;
+  left: 50%;
+  margin-left:-40px;
+}
+.joinName,.joinTxt{
+  position: absolute;
+  background-size: 100% ;
+  width: 100%;
+  top: 150px;
+  font-size: 12px;
+  text-align: center;
+  font-size: 16px;
+  color: #f2a93b;
+  font-weight: bold;
+}
+.joinTxt{
+  top: 240px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.msgInfoCon{
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  height: 210px;
+  top:50%;
+  margin-top: -105px;
+  border-radius: 15px;
+  padding: 7px;
+  background: url('../image/diban4.png') no-repeat;
+  background-size: 100%;
+  padding: 20px;
+  position: relative;
+  color: #b66700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 140px;
+}
+.failCon{
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  height: 210px;
+  top:50%;
+  margin-top: -105px;
+  border-radius: 15px;
+  padding: 7px;
+  background: url('../image/diban2.png') no-repeat;
+  background-size: 100%;
+  padding: 20px;
+  position: relative;
+}
+.failCon .failBtns{
+  position: absolute;
+  width: 260px;
+  left: 20px;
+  bottom: 15px;
+  display: -webkit-box;
+  height: 40px;
+}
+.failCon .failBtns div{
+  -webkit-box-flex: 1;
+}
+.failBtns .ok{
+  background: url('../image/queding2.png') no-repeat center center;
+  background-size: 120px;
+}
+.failBtns .no{
+  background: url('../image/quxiao2.png') no-repeat center center;
+  background-size: 120px;
+}
+.failCon .text{
+  color: #b66700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 140px;
+}
+.imgPic{
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  height: 500px;
+  top:50%;
+  margin-top: -250px;
+  border-radius: 15px;
+  padding: 7px;
+}
+.joinSuccess img{
+  width: 100%;
+}
+.inviteCon{
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  height: 500px;
+  overflow-y:scroll;
+  top:50%;
+  margin-top: -250px;
+  background: rgba(255,255,255,.6);
+  border-radius: 15px;
+  padding: 7px;
+}
+.inviteCen{
+  width: 286px;
+  height: 486px;
+  background: rgba(0,0,0,.6);
+  border-radius: 15px;
+  padding: 8px;
+}
+.list{
+  width: 100%;
+  height: 60px;
+  background: url(../image/diban.png);
+  background-size: 100% 60px;
+  display: -webkit-box;
+  margin-bottom: 10px;
+}
+.userName{
+  -webkit-box-flex: 1;
+  line-height: 60px;
+  text-align: left;
+  font-size: 14px;
+  color: #da8a25;
+}
+.headePic{
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+.headePic img{
+  width: 100%;
+  height: 100%;
+}
+.btns{
+  width: 80px;
+  padding:5px 10px;
+}
+.sub{
+  width: 60px;
+  height: 22px;
+  background: url('../image/tongyi.png');
+  background-size: 100% 22px;
+}
+.fild{
+  width: 60px;
+  height: 22px;
+  background: url('../image/jujue.png');
+  background-size: 100% 22px;
+  margin-top: 5px;
+}

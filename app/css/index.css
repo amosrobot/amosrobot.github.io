@@ -1,0 +1,400 @@
+body{
+  background: url('../image/bg.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+header{
+  height: 55px;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  padding:5px 10px;
+  border-bottom: 0;
+  background-color: #0a7995;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: #eee;
+  overflow: hidden;
+}
+.left{
+  float: left;
+  height: 45px;
+  margin-left: 10px;
+}
+.left .portrait{
+  width: 45px;
+  height: 45px;
+  background: #da8938;
+  position: relative;
+  border-radius: 5px;
+  float: left;
+}
+.left .portrait img{
+  width: 100%;
+  height: 100%;
+}
+.addBorder{
+  box-shadow: rgba(218, 137, 56, 0.8) 0px 0px 3px 1px
+}
+.left .portrait span{
+  position: absolute;
+  width:65px;
+  left:-10px;
+  bottom: 0px;
+  background: rgba(0,0,0,.4);
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+.left .username{
+  float: left;
+  margin-left:15px;
+}
+.left .username p{
+  width: 80px;
+  height: 20px;
+  line-height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.roomCard{
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.roomCard span{
+  height: 15px;
+  background: #fff7dd;
+  display: block;
+  width: 80px;
+  border-radius: 8px;
+  padding-left: 20px;
+  margin-top:5px;
+  color: #333;
+  line-height: 15px;
+  text-align: right;
+  padding-right: 10px;
+}
+.addBorder2{
+  box-shadow: rgba(35, 195, 227, 0.8) 0px 0px 3px 1px
+}
+.roomCard em{
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  background: url('../image/fangka.png');
+  background-size: 20px 25px;
+  top:0px;
+  left:-1px;
+  line-height: 12px;
+  border-radius: 4px;
+  text-align: center;
+}
+.right{
+  float: right;
+}
+.service{
+  height: 45px;
+  float: left;
+  margin-right: 20px;
+}
+.service span{
+  width: 40px;
+  height: 40px;
+  background: url('../image//serve.png');
+  background-size: 40px 40px;
+  margin-left: 10px;
+  margin-top: 2px;
+  display: block;
+}
+.more{
+  height: 45px;
+  float: left;
+}
+.more span{
+  width: 40px;
+  height: 40px;
+  background: url('../image/more.png');
+  background-size: 40px 40px;
+  margin-left: 10px;
+  margin-top: 2px;
+  display: block;
+}
+.more p{
+  height: 20px;
+  line-height: 20px;
+}
+.content{
+  padding-top: 55px;
+}
+.mui-table-view.mui-grid-view {
+  font-size: 0;
+  display: block;
+  width: 100%;
+  padding: 0 20px 20px 0;
+  white-space: normal;
+}
+.mui-table-view {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell {
+  font-size: 17px;
+  display: inline-block;
+  padding: 20px 0 0 20px;
+  text-align: center;
+  vertical-align: middle;
+  background: 0 0;
+}
+.spat{
+  position: relative;
+}
+.mui-table-view-cell img{
+  width: 100%;
+}
+.mui-col-xs-6{
+  width: 50%;
+  min-height: 1px;
+}
+.showWin{
+  position: fixed;
+  z-index: 999;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  top:50px;
+  display: none;
+}
+.showWinBg,.showWinmore,.showWinroom{
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  display: none;
+}
+.showWin div{
+  width: 300px;
+  margin: 0px auto;
+}
+.showWin div img{
+  width: 100%;
+}
+.showWinmoreConter{
+  width: 300px;
+  position: fixed;
+  height: 428px;
+  z-index: 999;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -214px;
+  top:50%;
+  background: url('../image/beijing.png');
+  background-size: 100% 100%;
+  padding: 15px;
+  padding-bottom: 20px;
+  display: none;
+}
+.moreList li{
+  text-align: center;
+  position: relative;
+}
+.moreList li .detailList{
+  width: 160px;
+  margin:0 auto;
+  margin-top: 10px;
+}
+.moreList li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  left:0;
+  bottom: -4px;
+  height: 3px;
+  background: url('../image/solid.png') no-repeat;
+  background-size: 270px 3px;
+}
+.moreList li:last-child:after{
+  display: none;
+}
+.moreList li .detailList img{
+  width: 100%;
+  height: 100%;
+}
+.showWinroomConter{
+  width: 300px;
+  height: 497px;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -249px;
+  background: #474747;
+  border-radius: 10px;
+  /* background:url('../image/winalert02.png');
+  background-size: 100% 100%; */
+  border: 1px solid #8f8970;
+  box-shadow: rgba(218, 137, 56, 0.8) 0px 0px 3px 1px;
+  padding:20px 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  display: none;
+}
+.settingType{
+  display: -webkit-box;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: url('../image/winalert01.png');
+  background-size: 100% 100%;
+}
+.settingType .item{
+  -webkit-box-flex :1
+}
+.settingType .item.active{
+  color: blue
+}
+.mui-input-row{
+  line-height: 30px;
+  display: -webkit-box;
+  color: #864422;
+  background: #d0b586;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.mui-input-row .label{
+  width:40px;
+  display: block;
+}
+.mui-input-row div.radio{
+  -webkit-box-flex :1;
+}
+.mui-input-row div.radio label{
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  vertical-align: top;
+  height:30px;
+}
+.mui-input-row div.radio label.length{
+  width: 84px
+}
+.mui-input-row div.radio label input{
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-top: 2px;
+}
+.mui-input-row div.radio label input:checked{
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+}
+.mui-input-row div.radio label span{
+  display: inline-block;
+  margin-left: 5px;
+  line-height:30px;
+  float: left;
+}
+.closeWin,.closeWin1{
+  position: absolute;
+  right: -20px;
+  top:-20px;
+  width: 45px;
+  height: 45px;
+  background: url(../image/closebtn.png) no-repeat;
+  background-size:45px 45px;
+}
+.mui-input-row div.radio label.rule input,.mui-input-row div.radio label.chip input{
+  background: url(../image/c_checkbox_on.png) no-repeat;
+  background-size:24px 24px;
+}
+.mui-input-row div.radio label.length input{
+  background: url(../image/c_checkbox_off.png) no-repeat;
+  background-size:24px 24px;
+}
+.mui-input-row div.radio label.length input:checked{
+  background: url(../image/c_checkbox_on.png) no-repeat;
+  background-size:24px 24px;
+}
+.mui-input-row div.radio label.special input{
+  background: url(../image/c_checkbox_off.png) no-repeat;
+  background-size:24px 24px;
+}
+.mui-input-row div.radio label.special input:checked{
+  background: url(../image/c_checkbox_on.png) no-repeat;
+  background-size:24px 24px;
+}
+.mui-input-row div.radio label.inning input{
+  background: url(../image/c_checkbox_off.png) no-repeat;
+  background-size:24px 24px;
+}
+.mui-input-row div.radio label.inning input:checked{
+  background: url(../image/c_checkbox_on.png) no-repeat;
+  background-size:24px 24px;
+}
+.peopleNumber input{
+  background: url(../image/c_checkbox_off.png) no-repeat;
+  background-size:24px 24px;
+}
+.peopleNumber input:checked{
+  background: url(../image/c_checkbox_on.png) no-repeat;
+  background-size:24px 24px;
+}
+.btn{
+  height: 45px;
+  width: 160px;
+  margin: 0 auto;
+  text-align: center;
+  background: url('../image/indexbtn1.png');
+  background-size: 100%;
+  margin-top: 10px;
+}
+.settingType .item{
+  background: url(../image/btn03-3.png) no-repeat center;
+  background-size: 90%;
+}
+.settingType .item.active{
+  background: url(../image/btn03.png) no-repeat center;
+  background-size: 90%;
+}
+.settingType .item:nth-child(2){
+  background: url(../image/btn01-1.png) no-repeat center;
+  background-size:  90%;
+}
+.settingType .item:nth-child(2).active{
+  background: url(../image/btn01.png) no-repeat center;
+  background-size: 90%;
+}
+.settingType .item:nth-child(3){
+  background: url(../image/btn02-2.png) no-repeat center;
+  background-size:  90%;
+}
+.settingType .item:nth-child(3).active{
+  background: url(../image/btn02.png) no-repeat center;
+  background-size: 90%;
+}
+.fromSetting{
+  margin-top: 10px;
+  padding: 5px;
+  background: url('../image/winalert02.png') no-repeat;
+  background-size: 100% 100%;
+}
+.mui-input-group {
+  padding: 10px;
+  background: #fdeed1;
+  border-radius: 10px;
+  /* background: url('../image/winalert03.png') no-repeat;
+  background-size: 100% 100%; */
+}

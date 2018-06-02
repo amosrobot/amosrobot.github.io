@@ -1,0 +1,28 @@
+body{
+  background: #333;
+}
+.winAlert{
+  width: 300px;
+  height: 255px;
+  position: absolute;
+  left:50%;
+  margin-left: -150px;
+  top:40%;
+  margin-top: -100px;
+  color: #fff;
+  background: url('../image/agreement.png');
+  background-size: cover;
+  padding: 50px 40px; 
+}
+.win{
+  position: relative;
+}
+.btn{
+  position: absolute;
+  width: 156px;
+  height: 45px;
+  bottom: 7px;
+  background: url('../image/agreementbtn.png');
+  background-size: cover;
+  margin-left: 30px;
+}
